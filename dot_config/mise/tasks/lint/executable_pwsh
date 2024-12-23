@@ -1,0 +1,15 @@
+#!/usr/bin/env pwsh
+#MISE description="Lint by PowerShell ScriptAnalyzer"
+#MISE hide=true
+
+Get-ChildItem -Recurse |
+    Where-Object {
+        $_.Name -match "\.ps1$" -and
+        $_.FullName -notmatch "\\node_modules\\"
+    } |
+    ForEach-Object {
+        Write-Output $_.FullName
+        Invoke-ScriptAnalyzer -Severity Warning $_.FullName
+    }
+
+# vim:ft=ps1

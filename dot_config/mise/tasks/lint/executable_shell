@@ -1,0 +1,7 @@
+#!/bin/bash
+#MISE description="Lint by shellcheck"
+#MISE hide=true
+
+# TODO: it
+
+# vim:ft=bash

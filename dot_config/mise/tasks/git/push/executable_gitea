@@ -1,0 +1,9 @@
+#!/bin/bash
+#MISE description="git push gitea"
+
+echo "Pushing to gitea..."
+git fetch gitea
+git push gitea master
+git push gitea --tags
+
+# vim:ft=bash

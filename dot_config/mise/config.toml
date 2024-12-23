@@ -35,6 +35,17 @@ zig = [
 "npm:npkill" = "latest"
 "npm:prettier" = "latest"
 
+# global tasks
+[tasks.test]
+description = "Lint all"
+alias = "lint"
+depends = ["lint:*"]
+
+[tasks.format]
+description = "Format all"
+alias = "fmt"
+depends = ["format:*"]
+
 [settings]
 asdf_compat = true
 experimental = true

@@ -1,0 +1,7 @@
+#!/bin/bash
+#MISE description="Format by shfmt"
+#MISE hide=true
+
+# TODO: it
+
+# vim:ft=bash

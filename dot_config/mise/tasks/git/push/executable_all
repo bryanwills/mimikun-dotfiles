@@ -1,0 +1,15 @@
+#!/bin/bash
+# MISE description="git push"
+
+# TODO: support arch linux
+HOSTNAME=$(cat /etc/hostname)
+
+if [[ "$HOSTNAME" = "TanakaPC" ]]; then
+    echo "        THIS IS WORK-PC!!!        "
+    echo "DON'T PUSH TO REMOTE REPOSITORY!!!"
+else
+    # TODO:
+    echo "WIP"
+fi
+
+# vim:ft=bash

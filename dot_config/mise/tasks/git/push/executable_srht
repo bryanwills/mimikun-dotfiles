@@ -1,0 +1,9 @@
+#!/bin/bash
+#MISE description="git push srht"
+
+echo "Pushing to srht..."
+git fetch srht
+git push srht master
+git push srht --tags
+
+# vim:ft=bash

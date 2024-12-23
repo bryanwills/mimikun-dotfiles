@@ -1,0 +1,9 @@
+#!/bin/bash
+#MISE description="git push codeberg"
+
+echo "Pushing to codeberg..."
+git fetch codeberg
+git push codeberg master
+git push codeberg --tags
+
+# vim:ft=bash

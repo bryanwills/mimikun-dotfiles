@@ -1,0 +1,9 @@
+#!/bin/bash
+#MISE description="git push origin"
+
+echo "Pushing to origin..."
+git fetch origin
+git push origin master
+git push origin --tags
+
+# vim:ft=bash

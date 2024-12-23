@@ -1,0 +1,7 @@
+#!/bin/bash
+#MISE description="git fetch --all --prune"
+#MISE alias=["clean-fetch", "cleanfetch","prune-fetch", "prunefetch"]
+
+git fetch --all --prune --tags --prune-tags
+
+# vim:ft=bash

@@ -1,0 +1,9 @@
+#!/bin/bash
+#MISE description="git push github"
+
+echo "Pushing to github..."
+git fetch github
+git push github master
+git push github --tags
+
+# vim:ft=bash

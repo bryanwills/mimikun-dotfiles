@@ -1,0 +1,7 @@
+#!/bin/bash
+#MISE description="Lint by typos"
+#MISE hide=true
+
+typos .
+
+# vim:ft=bash
